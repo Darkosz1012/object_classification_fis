@@ -1,7 +1,7 @@
 
 var model;
 async function initialize() {
-    model = await tf.loadLayersModel('/models/model.json');
+    model = await tf.loadLayersModel('models/model.json');
     model.summary();
     console.log(model)
 }
